@@ -1,2 +1,3 @@
-lib
+lib_linux
+lib_win
 output_tmp_*
