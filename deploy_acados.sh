@@ -14,7 +14,7 @@ cd ..
 ACADOS_VERSION=${ACADOS_SHORT_ID}_linux
 OUTPUT_DIR=output_tmp_$ACADOS_VERSION
 
-cp acados $OUTPUT_DIR
+cp -r acados $OUTPUT_DIR
 
 mkdir $OUTPUT_DIR/lib
 
@@ -27,16 +27,15 @@ cp lib_linux/libhpipm.so $OUTPUT_DIR/lib
 cd $OUTPUT_DIR
 zip -r -q acados-${ACADOS_VERSION}.zip .
 cd ..
-mv $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output
+mv $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output/acados-${ACADOS_VERSION}.zip
 
 rm -rf $OUTPUT_DIR
-rm acados_src.zip
 
 # windows
 ACADOS_VERSION=${ACADOS_SHORT_ID}_win
 OUTPUT_DIR=output_tmp_$ACADOS_VERSION
 
-cp acados $OUTPUT_DIR
+cp -r acados $OUTPUT_DIR
 
 mkdir $OUTPUT_DIR/lib
 
@@ -48,10 +47,9 @@ cp lib_win/libhpipm.lib $OUTPUT_DIR/lib
 cd $OUTPUT_DIR
 zip -r -q acados-${ACADOS_VERSION}.zip .
 cd ..
-mv $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output
+mv $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output/acados-${ACADOS_VERSION}.zip
 
 rm -rf $OUTPUT_DIR
-rm acados_src.zip
 
 # cleanup
 rm -rf acados
