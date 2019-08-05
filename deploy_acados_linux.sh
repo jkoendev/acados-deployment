@@ -23,6 +23,7 @@ cp lib_linux/libhpipm.so $OUTPUT_DIR/lib
 cd $OUTPUT_DIR
 zip -r -q acados-${ACADOS_VERSION}.zip .
 cd ..
-cp $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output
+mv $OUTPUT_DIR/acados-${ACADOS_VERSION}.zip output
 
 rm -rf $OUTPUT_DIR
+rm acados_src.zip
