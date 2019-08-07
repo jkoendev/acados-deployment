@@ -1,11 +1,11 @@
 set -e
 
-ACADOS_COMMIT_ID=41d8e7df52f43ed20057a16df4c846be186c5fc6
-ACADOS_SHORT_ID=41d8e7
+ACADOS_COMMIT_ID=1171fa9cc6e46703668075fa9ed99d62dceac6e7
+ACADOS_SHORT_ID=1171fa
 
 git clone https://github.com/acados/acados.git
 cd acados
-git checkout 41d8e7df52f43ed20057a16df4c846be186c5fc6
+git checkout $ACADOS_COMMIT_ID
 git submodule init
 git submodule update
 cd ..
