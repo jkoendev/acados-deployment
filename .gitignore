@@ -2,3 +2,6 @@ lib_linux
 lib_win
 output_tmp_*
 output
+acados
+acados_build
+acados_install
