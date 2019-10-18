@@ -1,7 +1,7 @@
 set -e
 
-ACADOS_COMMIT_ID=53b661f99e526d1bf5be166a9b552641df361219
-ACADOS_SHORT_ID=53b661
+ACADOS_COMMIT_ID=16b20b13de4cdc98b27839f613024ed225f636b8
+ACADOS_SHORT_ID=16b20b
 
 git clone https://github.com/acados/acados.git
 cd acados
